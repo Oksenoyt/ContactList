@@ -16,20 +16,20 @@ struct Person {
     }
     
     static func getPersons() -> [Person] {
-//        var contactList: [Person]
+        var contactList: [Person] = []
         
-//        for name in DataStore().firstNames {
-//            contactList.append(
-              [  Person(
-                firstName: DataStore().firstNames.randomElement() ?? " ",
+        for name in DataStore().firstNames {
+            contactList.append(
+                Person(
+                    firstName: name,
                     lastName: DataStore().lastNames.randomElement() ?? " ",
                     email: DataStore().emails.randomElement() ?? " ",
                     phoneNumber: DataStore().phoneNumbers.randomElement() ?? " "
                 )
-//            )
-              ]
-//        }
-//        return contactList
+            )
+            
+        }
+        return contactList
     }
     
 }

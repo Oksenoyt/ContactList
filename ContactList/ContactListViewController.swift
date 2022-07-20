@@ -8,24 +8,15 @@
 import UIKit
 
 class ContactListViewController: UITableViewController {
-
+    
     var contactList = Person.getPersons()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
     // MARK: - Table view data source
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 0
-//    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contactList.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         let contact = contactList[indexPath.row]
@@ -33,17 +24,17 @@ class ContactListViewController: UITableViewController {
         
         content.text = contact.fullName
         cell.contentConfiguration = content
-
+        
         return cell
     }
-
-
+    
+    
     // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsVC = segue.destination as? ContactInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
         detailsVC.contact = contactList[indexPath.row]
     }
-
 }
