@@ -9,7 +9,7 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
 
-    var contactList = getContactList()
+    var contactList = Person.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,7 @@ class ContactListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         
         content.text = contact.fullName
+        cell.contentConfiguration = content
 
         return cell
     }
@@ -39,20 +40,10 @@ class ContactListViewController: UITableViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        guard let detailsVC = segue.destination as? ContactInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        detailsVC.contact = contactList[indexPath.row]
     }
 
-}
-
-// MARK: - Private functions
-
-extension ContactListViewController {
-    private func getContactList() -> [Person] {
-//        var contactList: [Person]
-//
-        for _ in DataStore().firstNames {
-            contactList.append(Person.getPerson())
-        }
-        return contactList
-    }
 }

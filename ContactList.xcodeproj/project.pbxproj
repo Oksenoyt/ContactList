@@ -15,6 +15,7 @@
 		7780991C28878A4600BB5CAB /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780991B28878A4600BB5CAB /* ContactListViewController.swift */; };
 		7780991E2887A34A00BB5CAB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780991D2887A34A00BB5CAB /* Person.swift */; };
 		778099202887A97500BB5CAB /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780991F2887A97500BB5CAB /* DataStore.swift */; };
+		778099222887BD0200BB5CAB /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778099212887BD0200BB5CAB /* ContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7780991B28878A4600BB5CAB /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		7780991D2887A34A00BB5CAB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7780991F2887A97500BB5CAB /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		778099212887BD0200BB5CAB /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				77809907288781C800BB5CAB /* AppDelegate.swift */,
 				77809909288781C800BB5CAB /* SceneDelegate.swift */,
 				7780991B28878A4600BB5CAB /* ContactListViewController.swift */,
+				778099212887BD0200BB5CAB /* ContactInfoViewController.swift */,
 				7780991D2887A34A00BB5CAB /* Person.swift */,
 				7780991F2887A97500BB5CAB /* DataStore.swift */,
 				7780990D288781C800BB5CAB /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				7780990A288781C800BB5CAB /* SceneDelegate.swift in Sources */,
 				778099202887A97500BB5CAB /* DataStore.swift in Sources */,
 				7780991C28878A4600BB5CAB /* ContactListViewController.swift in Sources */,
+				778099222887BD0200BB5CAB /* ContactInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
