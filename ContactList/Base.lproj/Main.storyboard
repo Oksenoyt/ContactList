@@ -163,12 +163,12 @@
             </objects>
             <point key="canvasLocation" x="-535" y="127"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Contact List-->
         <scene sceneID="Qhl-bV-LIW">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ana-J7-S0W" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="qJr-Bh-qev"/>
+                    <navigationItem key="navigationItem" title="Contact List" id="qJr-Bh-qev"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bx8-VS-wkC">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
