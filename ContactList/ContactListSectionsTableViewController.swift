@@ -2,7 +2,7 @@
 //  ContactListSectionsTableViewController.swift
 //  ContactList
 //
-//  Created by Elena Kholodilina on 20.07.2022.
+//  Created by Arseniy Oksenoyt on 20.07.2022.
 //
 
 import UIKit
@@ -33,6 +33,7 @@ class ContactListSectionsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailedContact", for: indexPath)
         let contact = contactList[indexPath.row]
+//        let contact2 = contactList[indexPath.section]
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {

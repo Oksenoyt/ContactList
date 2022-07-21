@@ -44,7 +44,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Regular" image="1.circle.fill" catalog="system" id="OTY-DB-Zs3"/>
-                    <navigationItem key="navigationItem" title="Contact list" id="nn5-yB-zn7"/>
+                    <navigationItem key="navigationItem" title="Contact list" largeTitleDisplayMode="always" id="nn5-yB-zn7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHC-ay-cfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,8 +58,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="vfX-9m-cCK">
-                                <rect key="frame" x="16" y="214" width="382" height="145"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="vfX-9m-cCK">
+                                <rect key="frame" x="16" y="223" width="382" height="127"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-fb-mJV">
                                         <rect key="frame" x="0.0" y="0.0" width="71" height="36"/>
@@ -68,13 +68,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE0-2c-Q2Z">
-                                        <rect key="frame" x="0.0" y="70" width="41.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="61" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-UO-shn">
-                                        <rect key="frame" x="0.0" y="124.5" width="41.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="106.5" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="1099" y="851"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Root-->
         <scene sceneID="LHI-u9-t4T">
             <objects>
                 <tableViewController id="L37-Mu-SAA" customClass="ContactListSectionsTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Sections" image="2.circle.fill" catalog="system" id="Mx8-CD-acv"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tW2-Bn-wdC"/>
+                    <navigationItem key="navigationItem" title="Root" id="tW2-Bn-wdC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ7-NX-UpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
